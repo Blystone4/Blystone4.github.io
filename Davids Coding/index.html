@@ -1,0 +1,83 @@
+<html> 
+<head>
+<link type="text/css" rel="stylesheet" href="main.css" />
+<title> How to play Roblox </title> 
+<script>
+function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?"); 
+return text; 
+}
+function answer(){ 
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "103" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop; 
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+} //end function answer 
+</script>
+<style> 
+p{ 
+color:blue;
+font-size:50px;
+}
+</style>
+</head> 
+<body id="background"> 
+<a href="http://bing.com" onclick="return banner()"><header>bing</header></a>
+<nav>
+<ul id="navmenu">
+<li  class="navitem"> <a href="index.html"> Home </a> </li>
+<li  class="navitem"> <a href="About Me.html"> About Me </a> </li>
+<li  class="navitem"> <a href="Games.html"> Games </a> </li>
+</ul>
+</nav>
+<div id="rightside">
+<h1> Game guide on how to play Roblox </h1>
+<p> This is a game guide on how to play <u>Roblox</u> the <b>keys to use are W,A,S,D</b>, and the other keys to use are the arrow keys. <i>It will depend on what game you play.</i> </p> 
+</div>
+<div id="leftside">
+<iframe width="420" height="315"
+src="https://youtu.be/dn-NJ4qz2Yw" 
+frameborder="0" allowfullscreen>
+</iframe>
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio> 
+</div>
+<ol>
+<li> Roblox is fun to play. </li>
+<li> Roblox has a lot of games to play. </li>
+<li> Roblox has people that make the games. </li>
+</ol> 
+<h2> 20 Questions: </h2>
+<p> How hot is it on a summer day?: </p> 
+<div class="warp-trivia"> 
+<form>
+<div id="response"></div>
+<input type="radio" name="trivia " value="100"> 100 <br>
+<input type="radio" name="trivia" value="103"> 103 <br>
+<input type="radio" name="trivia" value="104"> 104 <br>
+<input type="radio" name="trivia" value="105"> 105 <br>
+<input type="button" id="submit" value="Click Here" onclick="answer()">
+</div>
+</form>
+<img src="https://pbs.twimg.com/profile_images/818730660755976193/ploA4jPR_400x400.jpg" />
+<img src="https://blog.roblox.com/wp-content/uploads/2017/01/roblox_v4.png" />
+<hr> 
+<center> fourthandgoal123 <a href="www.robloxplaying.com">My Favorite game</a> </center>
+</body> 
+<footer> <span class="wrap-text">Roblox is fun to play and you can join groups also.</span> </footer>
+</html>
